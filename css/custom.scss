@@ -2,3 +2,116 @@
 @import "mixins.scss";
 @import "typography.scss";
 @import "agency.scss";
+
+$theme-custom-color: hsla(100,60%,70%,1);
+
+.text-primary {
+    color: $theme-custom-color;
+}
+
+a {
+    color: $theme-custom-color;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: darken ($theme-custom-color, 10%);
+}
+
+.btn-primary {
+    @include button-variant (white, $theme-custom-color, $theme-custom-color);
+}
+
+.btn-xl {
+    @include button-variant (white, $theme-custom-color, $theme-custom-color);
+}
+
+.navbar-custom {
+    .navbar-brand {
+        color: $theme-custom-color;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken ($theme-custom-color, 10%);
+        }
+    }
+    .navbar-collapse {
+        border-color: fade-out ($theme-custom-color, .02);
+    }
+    .navbar-toggle {
+        background-color: $theme-custom-color;
+        border-color: $theme-custom-color;
+        &:hover,
+        &:focus {
+            background-color: $theme-custom-color;
+        }
+    }
+    .nav {
+        li {
+            a {
+                &:hover,
+                &:focus {
+                    color: $theme-custom-color;
+                }
+            }
+        }
+    }
+    .navbar-nav > .active > a {
+        background-color: $theme-custom-color;
+    }
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        background-color: darken ($theme-custom-color, 10%);
+    }
+}
+
+#portfolio {
+    .portfolio-item {
+        .portfolio-link {
+            .portfolio-hover {
+                background: fade-out ($theme-custom-color, .9);
+            }
+        }
+    }
+}
+
+.timeline {
+    > li {
+        .timeline-image {
+            background-color: $theme-custom-color;
+        }
+    }
+}
+
+section#contact {
+    .form-control:focus {
+        border-color: $theme-custom-color;
+    }
+}
+
+ul.social-buttoms {
+    li {
+        a {
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $theme-custom-color;
+            }
+        }
+    }
+}
+
+::-moz-selection {
+    background: $theme-custom-color;
+}
+
+::selection {
+    background: $theme-custom-color;
+}
+
+body {
+    webkit-tap-highlight-color: $theme-custom-color;
+}
