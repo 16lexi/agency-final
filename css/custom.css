@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 167, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/_agency.scss */
 header {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg-org.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -781,7 +781,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: darken #a3e085, 10%; }
+  color: #85d65c; }
 
 /* line 23, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .btn-primary {
@@ -878,58 +878,54 @@ a.active {
   color: #a3e085; }
   /* line 34, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
-    color: darken #a3e085, 10%; }
+    color: #85d65c; }
 
 /* line 41, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-.navbar-custom .navbar-collapse {
-  border-color: fade-out #a3e085, 0.02; }
-
-/* line 44, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-toggle {
   background-color: #a3e085;
   border-color: #a3e085; }
-  /* line 47, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 44, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
     background-color: #a3e085; }
 
-/* line 55, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 52, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
   color: #a3e085; }
 
-/* line 62, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 59, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a {
   background-color: #a3e085; }
 
-/* line 65, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 62, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  background-color: darken #a3e085, 10%; }
+  background-color: #85d65c; }
 
-/* line 74, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 71, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: fade-out #a3e085, 0.9; }
 
-/* line 83, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 80, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .timeline > li .timeline-image {
   background-color: #a3e085; }
 
-/* line 90, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 87, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact .form-control:focus {
   border-color: #a3e085; }
 
-/* line 98, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 95, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ul.social-buttoms li a:hover, ul.social-buttoms li a:focus, ul.social-buttoms li a:active {
   background-color: #a3e085; }
 
-/* line 107, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 104, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::-moz-selection {
   background: #a3e085; }
 
-/* line 111, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 108, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::selection {
-  background: #a3e085; }
+  background: #a3e085 !important; }
 
-/* line 115, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 112, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 body {
   webkit-tap-highlight-color: #a3e085; }
 

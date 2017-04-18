@@ -17,7 +17,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken ($theme-custom-color, 10%);
+    color: darken($theme-custom-color, 10%);
 }
 
 .btn-primary {
@@ -35,11 +35,8 @@ a.active {
         &:focus,
         &:active,
         &.active {
-            color: darken ($theme-custom-color, 10%);
+            color: darken($theme-custom-color, 10%);
         }
-    }
-    .navbar-collapse {
-        border-color: fade-out ($theme-custom-color, .02);
     }
     .navbar-toggle {
         background-color: $theme-custom-color;
@@ -64,7 +61,7 @@ a.active {
     }
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
-        background-color: darken ($theme-custom-color, 10%);
+        background-color: darken($theme-custom-color, 10%);
     }
 }
 
@@ -109,7 +106,7 @@ ul.social-buttoms {
 }
 
 ::selection {
-    background: $theme-custom-color;
+    background: $theme-custom-color !important;
 }
 
 body {
