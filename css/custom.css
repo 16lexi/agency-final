@@ -1,3 +1,81 @@
+@font-face {
+  font-family: 'Script-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/corben-v9-latin-regular.woff2") format("woff2"), url("/fonts/corben-v9-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Script-font';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/corben-v9-latin-700.woff2") format("woff2"), url("/fonts/corben-v9-latin-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Serif-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/droid-serif-v6-latin-regular.woff2") format("woff2"), url("/fonts/droid-serif-v6-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Serif-font';
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/droid-serif-v6-latin-italic.woff2") format("woff2"), url("/fonts/droid-serif-v6-latin-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Serif-font';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/droid-serif-v6-latin-700.woff2") format("woff2"), url("/fonts/droid-serif-v6-latin-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Serif-font';
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/droid-serif-v6-latin-700italic.woff2") format("woff2"), url("/fonts/droid-serif-v6-latin-700italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Body-font';
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/roboto-slab-v6-latin-100.woff2") format("woff2"), url("/fonts/roboto-slab-v6-latin-100.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Body-font';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/roboto-slab-v6-latin-300.woff2") format("woff2"), url("/fonts/roboto-slab-v6-latin-300.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Body-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/roboto-slab-v6-latin-regular.woff2") format("woff2"), url("/fonts/roboto-slab-v6-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Body-font';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/roboto-slab-v6-latin-700.woff2") format("woff2"), url("/fonts/roboto-slab-v6-latin-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Heading-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/philosopher-v8-latin-regular.woff2") format("woff2"), url("/fonts/philosopher-v8-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Heading-font';
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/philosopher-v8-latin-italic.woff2") format("woff2"), url("/fonts/philosopher-v8-latin-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Heading-font';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/philosopher-v8-latin-700.woff2") format("woff2"), url("/fonts/philosopher-v8-latin-700.woff") format("woff"); }
+
 /* line 4, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/_agency.scss */
 body {
   overflow-x: hidden;
@@ -769,25 +847,23 @@ body {
   webkit-tap-highlight-color: #fed136; }
 
 /* line 8, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-.text-primary {
-  color: #a3e085; }
-
-/* line 12, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 a {
   color: #a3e085; }
 
-/* line 16, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 12, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 a:hover,
 a:focus,
 a:active,
 a.active {
   color: #85d65c; }
 
-/* line 23, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 19, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .btn-primary {
   color: white;
   background-color: #a3e085;
-  border-color: #a3e085; }
+  border-color: #a3e085;
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
   /* line 10, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/_mixins.scss */
   .btn-primary:focus, .btn-primary.focus {
     color: white;
@@ -828,11 +904,13 @@ a.active {
     color: #a3e085;
     background-color: white; }
 
-/* line 27, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 24, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .btn-xl {
   color: white;
   background-color: #a3e085;
-  border-color: #a3e085; }
+  border-color: #a3e085;
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
   /* line 10, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/_mixins.scss */
   .btn-xl:focus, .btn-xl.focus {
     color: white;
@@ -873,60 +951,140 @@ a.active {
     color: #a3e085;
     background-color: white; }
 
-/* line 32, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 29, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+body {
+  font-family: "Body-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  webkit-tap-highlight-color: #a3e085; }
+
+/* line 35, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+footer span.copyright {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 38, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+footer ul.quicklinks {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 43, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 49, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+header .intro-text .intro-lead-in {
+  font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 52, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+header .intro-text .intro-heading {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 59, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-brand {
-  color: #a3e085; }
-  /* line 34, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  color: #a3e085;
+  font-family: "Script-font", "Helvetica Neue", Helvetica, Arial, display; }
+  /* line 62, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
     color: #85d65c; }
 
-/* line 41, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 69, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-toggle {
   background-color: #a3e085;
-  border-color: #a3e085; }
-  /* line 44, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  border-color: #a3e085;
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  /* line 73, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
     background-color: #a3e085; }
 
-/* line 52, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-  color: #a3e085; }
+/* line 80, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+.navbar-custom .nav li a {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  /* line 82, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+    color: #a3e085; }
 
-/* line 59, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 89, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a {
   background-color: #a3e085; }
 
-/* line 62, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 92, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   background-color: #85d65c; }
 
-/* line 71, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 100, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px; }
+
+/* line 112, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: fade-out #a3e085, 0.9; }
 
-/* line 80, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-.timeline > li .timeline-image {
-  background-color: #a3e085; }
+/* line 117, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 87, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 125, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+section h3.section-subheading {
+  font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 131, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact .form-control:focus {
   border-color: #a3e085; }
 
-/* line 95, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 134, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+section#contact ::-webkit-input-placeholder {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 137, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+section#contact :-moz-placeholder {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 140, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+section#contact ::-moz-placeholder {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 143, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+section#contact :-ms-input-placeholder {
+  font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+/* line 148, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+.text-primary {
+  color: #a3e085; }
+
+/* line 154, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+.timeline > li .timeline-image {
+  background-color: #a3e085; }
+
+/* line 163, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ul.social-buttoms li a:hover, ul.social-buttoms li a:focus, ul.social-buttoms li a:active {
   background-color: #a3e085; }
 
-/* line 104, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+@media (min-width: 768px) {
+  /* line 175, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  header .intro-text .intro-lead-in {
+    font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* line 178, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  header .intro-text .intro-heading {
+    font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; } }
+
+/* line 185, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::-moz-selection {
   background: #a3e085; }
 
-/* line 108, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 189, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::selection {
   background: #a3e085 !important; }
-
-/* line 112, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-body {
-  webkit-tap-highlight-color: #a3e085; }
 
 /*# sourceMappingURL=custom.css.map */

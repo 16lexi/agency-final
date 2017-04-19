@@ -5,10 +5,6 @@
 
 $theme-custom-color: hsla(100,60%,70%,1);
 
-.text-primary {
-    color: $theme-custom-color;
-}
-
 a {
     color: $theme-custom-color;
 }
@@ -22,15 +18,47 @@ a.active {
 
 .btn-primary {
     @include button-variant (white, $theme-custom-color, $theme-custom-color);
+    @include Heading-font;
 }
 
 .btn-xl {
     @include button-variant (white, $theme-custom-color, $theme-custom-color);
+    @include Heading-font;
+}
+
+body {
+    @include Body-font;
+    webkit-tap-highlight-color: $theme-custom-color;
+}
+
+footer {
+    span.copyright {
+        @include Heading-font;
+    }
+    ul.quicklinks {
+        @include Heading-font;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include Heading-font;
+}
+
+header {
+    .intro-text {
+        .intro-lead-in {
+            @include Serif-font;
+        }
+        .intro-heading {
+            @include Heading-font;
+        }
+    }
 }
 
 .navbar-custom {
     .navbar-brand {
         color: $theme-custom-color;
+        @include Script-font;
         &:hover,
         &:focus,
         &:active,
@@ -41,6 +69,7 @@ a.active {
     .navbar-toggle {
         background-color: $theme-custom-color;
         border-color: $theme-custom-color;
+        @include Heading-font;
         &:hover,
         &:focus {
             background-color: $theme-custom-color;
@@ -49,6 +78,7 @@ a.active {
     .nav {
         li {
             a {
+                @include Heading-font;
                 &:hover,
                 &:focus {
                     color: $theme-custom-color;
@@ -65,6 +95,17 @@ a.active {
     }
 }
 
+.portfolio-modal {
+    .modal-content {
+        p.item-intro {
+            margin: 20px 0 30px;
+            @include Serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+    }
+}
+
 #portfolio {
     .portfolio-item {
         .portfolio-link {
@@ -72,7 +113,40 @@ a.active {
                 background: fade-out ($theme-custom-color, .9);
             }
         }
+        .portfolio-caption {
+            p {
+                @include Serif-font;
+            }
+        }
     }
+}
+
+section {
+    h3.section-subheading {
+        @include Serif-font;
+    }
+}
+
+section#contact {
+    .form-control:focus {
+        border-color: $theme-custom-color;
+    }
+    ::-webkit-input-placeholder {
+       @include Heading-font;
+    }
+    :-moz-placeholder { 
+       @include Heading-font;
+    }
+    ::-moz-placeholder {  
+       @include Heading-font;
+    }
+    :-ms-input-placeholder {  
+       @include Heading-font;
+    }
+}
+
+.text-primary {
+    color: $theme-custom-color;
 }
 
 .timeline {
@@ -80,12 +154,6 @@ a.active {
         .timeline-image {
             background-color: $theme-custom-color;
         }
-    }
-}
-
-section#contact {
-    .form-control:focus {
-        border-color: $theme-custom-color;
     }
 }
 
@@ -101,14 +169,23 @@ ul.social-buttoms {
     }
 }
 
+@media(min-width:768px) {
+    header {
+        .intro-text {
+            .intro-lead-in {
+                @include Serif-font;
+            }
+            .intro-heading {
+                @include Heading-font;
+            }
+        }
+    }
+}
+
 ::-moz-selection {
     background: $theme-custom-color;
 }
 
 ::selection {
     background: $theme-custom-color !important;
-}
-
-body {
-    webkit-tap-highlight-color: $theme-custom-color;
 }
