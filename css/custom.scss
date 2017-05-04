@@ -3,7 +3,12 @@
 @import "typography.scss";
 @import "agency.scss";
 
-$theme-custom-color: hsla(100,60%,70%,1);
+// hsla(368,50%,50%,1)
+// hsla(365,50%,50%,1)
+
+$theme-custom-color: hsla(21,85%,62%,1);
+$placeholder-color: hsla(0,0%,50%,1);
+$portfolio-color: hsla(21,85%,62%,0.8);
 
 a {
     color: $theme-custom-color;
@@ -13,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken($theme-custom-color, 10%);
+    color: darken($theme-custom-color, 10%); // mess with this percentage; 10%
 }
 
 .btn-primary {
@@ -34,6 +39,7 @@ body {
 footer {
     span.copyright {
         @include Heading-font;
+        float: none;
     }
     ul.quicklinks {
         @include Heading-font;
@@ -45,12 +51,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    background-image: url('/img/header-bg-custom/hard-drive-disk-edit.jpg');
     .intro-text {
         .intro-lead-in {
             @include Serif-font;
         }
         .intro-heading {
             @include Heading-font;
+            margin-bottom: 10px;
         }
     }
 }
@@ -63,7 +71,7 @@ header {
         &:focus,
         &:active,
         &.active {
-            color: darken($theme-custom-color, 10%);
+            color: darken($theme-custom-color, 10%); // mess with this percentage; 10%
         }
     }
     .navbar-toggle {
@@ -95,31 +103,175 @@ header {
     }
 }
 
-.portfolio-modal {
-    .modal-content {
-        p.item-intro {
-            margin: 20px 0 30px;
-            @include Serif-font;
-            font-style: italic;
-            font-size: 16px;
+//#portfolio {
+//    .portfolio-item {
+//        .portfolio-link {
+//            .portfolio-hover {
+//                background: hsla(21,85%,62%,0.8);
+//            }
+//        }
+//        .portfolio-caption {
+//            p {
+//                @include Serif-font;
+//            }
+//        }
+//    }
+//}
+
+// photography portfolio
+
+#photography {
+    .photography-item {
+        margin: 0 0 15px;
+        right: 0;
+        .photography-link {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .photography-hover {
+                background: $portfolio-color;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .photography-hover-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    i {
+                        margin-top: -12px;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                }                
+            }            
+        }
+        .photography-caption {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            h4 {
+                text-transform: none;
+                margin: 0;
+            }
+            p {
+                @include Serif-font;
+                font-style: italic;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width:767px) {
+    #photography {
+        .photography-item {
+            margin: 0 0 30px;
         }
     }
 }
 
-#portfolio {
-    .portfolio-item {
-        .portfolio-link {
-            .portfolio-hover {
-                background: fade-out ($theme-custom-color, .9);
-            }
+// photography modal
+
+.photography-modal {
+    .modal-dialog{
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    .modal-content {
+        border-radius: 0;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        min-height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
         }
-        .portfolio-caption {
-            p {
-                @include Serif-font;
-            }
+        p {
+            margin-bottom: 30px;
+        }
+        p.item-intro {
+            margin: 20px 0 30px;
+            @include serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+        ul.list-inline {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: 30px;
         }
     }
+    .close-modal {
+        position: absolute;
+        width:75px;
+        height:75px;
+        background-color:transparent;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.3;
+        }
+        .lr {
+            height:75px;
+            width:1px;
+            margin-left:35px;
+            background-color:$gray-darker;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Safari and Chrome */
+            z-index:1051;
+            .rl {
+                height:75px;
+                width:1px;
+                background-color:$gray-darker;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari and Chrome */
+                z-index:1052;
+            }            
+        }        
+    }
+    .modal-backdrop {
+        opacity: 0;
+        display: none;
+    }
 }
+
+
+// end of photography
 
 section {
     h3.section-subheading {
@@ -132,16 +284,24 @@ section#contact {
         border-color: $theme-custom-color;
     }
     ::-webkit-input-placeholder {
-       @include Heading-font;
+        @include Heading-font;
+        text-transform: none;
+        color: $placeholder-color;
     }
     :-moz-placeholder { 
-       @include Heading-font;
+        @include Heading-font;
+        text-transform: none;
+        color: $placeholder-color;
     }
     ::-moz-placeholder {  
-       @include Heading-font;
+        @include Heading-font;
+        text-transform: none;
+        color: $placeholder-color;
     }
     :-ms-input-placeholder {  
-       @include Heading-font;
+        @include Heading-font;
+        text-transform: none;
+        color: $placeholder-color;
     }
 }
 
