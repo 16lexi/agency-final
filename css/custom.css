@@ -949,61 +949,70 @@ h1, h2, h3, h4, h5, h6 {
 /* line 84, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 header {
   background-image: url("/img/header-bg-custom/hard-drive-disk-edit.png"); }
-  /* line 87, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-  header .intro-text .intro-lead-in {
-    font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  /* line 90, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
-  header .intro-text .intro-heading {
-    font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
+  /* line 86, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  header .intro-text {
+    padding-top: 166px;
+    padding-bottom: 190px; }
+    /* line 89, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    header .intro-text .intro-lead-in {
+      font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 2em; }
+    /* line 93, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    header .intro-text .intro-heading {
+      font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 1em; }
 
-/* line 98, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 101, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-brand {
   color: #4cf09e;
   font-family: "Script-font", "Helvetica Neue", Helvetica, Arial, display; }
-  /* line 101, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 104, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
     color: #0a7f45 !important; }
 
-/* line 108, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 111, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-toggle {
   background-color: #4cf09e;
   border-color: #4cf09e;
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
-  /* line 112, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 115, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
     background-color: #4cf09e; }
 
-/* line 119, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 122, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .nav li a {
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
-  /* line 121, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 124, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
     color: #4cf09e; }
 
-/* line 128, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 131, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a {
   background-color: #4cf09e; }
 
-/* line 131, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 134, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   background-color: #0a7f45 !important; }
 
-/* line 155, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 140, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+.modal-backdrop.in {
+  opacity: 0; }
+
+/* line 163, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #photography .photography-item {
   margin: 0 0 15px;
   right: 0; }
-  /* line 158, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 166, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #photography .photography-item .photography-link {
     display: block;
     position: relative;
     max-width: 400px;
     margin: 0 auto; }
-    /* line 163, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 171, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #photography .photography-item .photography-link .photography-hover {
       background: rgba(29, 88, 72, 0.8);
       position: absolute;
@@ -1013,10 +1022,10 @@ header {
       transition: all ease 0.5s;
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s; }
-      /* line 172, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+      /* line 180, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
       #photography .photography-item .photography-link .photography-hover:hover {
         opacity: 1; }
-      /* line 175, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+      /* line 183, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
       #photography .photography-item .photography-link .photography-hover .photography-hover-content {
         position: absolute;
         width: 100%;
@@ -1026,47 +1035,47 @@ header {
         top: 50%;
         margin-top: -12px;
         color: white; }
-        /* line 184, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+        /* line 192, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
         #photography .photography-item .photography-link .photography-hover .photography-hover-content i {
           margin-top: -12px; }
-        /* line 187, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+        /* line 195, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
         #photography .photography-item .photography-link .photography-hover .photography-hover-content h3,
         #photography .photography-item .photography-link .photography-hover .photography-hover-content h4 {
           margin: 0; }
-  /* line 194, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 202, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #photography .photography-item .photography-caption {
     max-width: 400px;
     margin: 0 auto;
     background-color: white;
     text-align: center;
     padding: 25px; }
-    /* line 200, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 208, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #photography .photography-item .photography-caption h4 {
       text-transform: none;
       margin: 0; }
-    /* line 204, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 212, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #photography .photography-item .photography-caption p {
       font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-style: italic;
       font-size: 16px;
       margin: 0; }
 
-/* line 212, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 220, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #photography * {
   z-index: 2; }
 
 @media (min-width: 767px) {
-  /* line 219, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 227, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #photography .photography-item {
     margin: 0 0 30px; } }
 
-/* line 228, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 236, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .photography-modal .modal-dialog {
   margin: 0;
   height: 100%;
   width: auto; }
 
-/* line 233, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 241, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .photography-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -1076,28 +1085,28 @@ header {
   min-height: 100%;
   padding: 100px 0;
   text-align: center; }
-  /* line 242, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 250, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em; }
-  /* line 246, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 254, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .modal-content p {
     margin-bottom: 30px; }
-  /* line 249, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 257, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px; }
-  /* line 255, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 263, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .modal-content ul.list-inline {
     margin-bottom: 30px;
     margin-top: 0; }
-  /* line 259, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 267, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .modal-content img {
     margin-bottom: 30px; }
 
-/* line 263, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 271, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .photography-modal .close-modal {
   position: absolute;
   width: 75px;
@@ -1106,10 +1115,10 @@ header {
   top: 25px;
   right: 25px;
   cursor: pointer; }
-  /* line 271, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 279, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .close-modal:hover {
     opacity: 0.3; }
-  /* line 274, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 282, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .photography-modal .close-modal .lr {
     height: 75px;
     width: 1px;
@@ -1121,7 +1130,7 @@ header {
     -webkit-transform: rotate(45deg);
     /* Safari and Chrome */
     z-index: 1051; }
-    /* line 285, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 293, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     .photography-modal .close-modal .lr .rl {
       height: 75px;
       width: 1px;
@@ -1133,22 +1142,22 @@ header {
       /* Safari and Chrome */
       z-index: 1052; }
 
-/* line 298, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 306, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .photography-modal .modal-backdrop {
   opacity: 0;
   display: none; }
 
-/* line 310, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 318, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #multimedia .multimedia-item {
   margin: 0 0 15px;
   right: 0; }
-  /* line 313, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 321, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #multimedia .multimedia-item .multimedia-link {
     display: block;
     position: relative;
     max-width: 400px;
     margin: 0 auto; }
-    /* line 318, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 326, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #multimedia .multimedia-item .multimedia-link .multimedia-hover {
       background: rgba(29, 88, 72, 0.8);
       position: absolute;
@@ -1158,10 +1167,10 @@ header {
       transition: all ease 0.5s;
       -webkit-transition: all ease 0.5s;
       -moz-transition: all ease 0.5s; }
-      /* line 327, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+      /* line 335, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
       #multimedia .multimedia-item .multimedia-link .multimedia-hover:hover {
         opacity: 1; }
-      /* line 330, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+      /* line 338, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
       #multimedia .multimedia-item .multimedia-link .multimedia-hover .multimedia-hover-content {
         position: absolute;
         width: 100%;
@@ -1171,47 +1180,47 @@ header {
         top: 50%;
         margin-top: -12px;
         color: white; }
-        /* line 339, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+        /* line 347, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
         #multimedia .multimedia-item .multimedia-link .multimedia-hover .multimedia-hover-content i {
           margin-top: -12px; }
-        /* line 342, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+        /* line 350, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
         #multimedia .multimedia-item .multimedia-link .multimedia-hover .multimedia-hover-content h3,
         #multimedia .multimedia-item .multimedia-link .multimedia-hover .multimedia-hover-content h4 {
           margin: 0; }
-  /* line 349, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 357, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #multimedia .multimedia-item .multimedia-caption {
     max-width: 400px;
     margin: 0 auto;
     background-color: white;
     text-align: center;
     padding: 25px; }
-    /* line 355, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 363, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #multimedia .multimedia-item .multimedia-caption h4 {
       text-transform: none;
       margin: 0; }
-    /* line 359, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 367, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     #multimedia .multimedia-item .multimedia-caption p {
       font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-style: italic;
       font-size: 16px;
       margin: 0; }
 
-/* line 367, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 375, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 #multimedia * {
   z-index: 2; }
 
 @media (min-width: 767px) {
-  /* line 374, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 382, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   #multimedia .multimedia-item {
     margin: 0 0 30px; } }
 
-/* line 383, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 391, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .multimedia-modal .modal-dialog {
   margin: 0;
   height: 100%;
   width: auto; }
 
-/* line 388, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 396, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .multimedia-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -1221,28 +1230,28 @@ header {
   min-height: 100%;
   padding: 100px 0;
   text-align: center; }
-  /* line 397, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 405, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em; }
-  /* line 401, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 409, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .modal-content p {
     margin-bottom: 30px; }
-  /* line 404, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 412, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px; }
-  /* line 410, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 418, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .modal-content ul.list-inline {
     margin-bottom: 30px;
     margin-top: 0; }
-  /* line 414, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 422, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .modal-content img {
     margin-bottom: 30px; }
 
-/* line 418, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 426, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .multimedia-modal .close-modal {
   position: absolute;
   width: 75px;
@@ -1251,10 +1260,10 @@ header {
   top: 25px;
   right: 25px;
   cursor: pointer; }
-  /* line 426, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 434, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .close-modal:hover {
     opacity: 0.3; }
-  /* line 429, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 437, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   .multimedia-modal .close-modal .lr {
     height: 75px;
     width: 1px;
@@ -1266,7 +1275,7 @@ header {
     -webkit-transform: rotate(45deg);
     /* Safari and Chrome */
     z-index: 1051; }
-    /* line 440, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+    /* line 448, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
     .multimedia-modal .close-modal .lr .rl {
       height: 75px;
       width: 1px;
@@ -1278,90 +1287,91 @@ header {
       /* Safari and Chrome */
       z-index: 1052; }
 
-/* line 453, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 461, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .multimedia-modal .modal-backdrop {
   opacity: 0;
   display: none; }
 
-/* line 464, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 472, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .timeline .timeline-heading h4 {
   color: #10c66b; }
 
-/* line 471, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 479, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section h3.section-subheading {
   font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 50px; }
 
-/* line 478, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 486, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact .text-muted {
   color: #cccccc; }
 
-/* line 481, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 489, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact .form-control:focus {
   border-color: #4cf09e; }
 
-/* line 484, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 492, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact ::-webkit-input-placeholder {
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
   color: gray; }
 
-/* line 489, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 497, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact :-moz-placeholder {
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
   color: gray; }
 
-/* line 494, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 502, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact ::-moz-placeholder {
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
   color: gray; }
 
-/* line 499, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 507, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 section#contact :-ms-input-placeholder {
   font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
   color: gray; }
 
-/* line 506, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 514, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .text-primary {
   color: #4cf09e; }
 
-/* line 511, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 519, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .timeline:before {
   background-color: #1d5848; }
 
-/* line 515, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 523, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 .timeline > li .timeline-image {
   background-color: #4cf09e;
-  border: 7px solid #1d5848; }
+  border: 7px solid #1d5848;
+  height: 170px; }
 
-/* line 525, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 538, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ul.social-buttoms li a:hover, ul.social-buttoms li a:focus, ul.social-buttoms li a:active {
   background-color: #4cf09e; }
 
 @media (min-width: 768px) {
-  /* line 537, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 550, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   header .intro-text .intro-lead-in {
     font-family: "Serif-font", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  /* line 540, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 553, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   header .intro-text .intro-heading {
     font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
-  /* line 545, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+  /* line 558, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
   section {
     padding: 30px 0; } }
 
-/* line 550, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 563, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::-moz-selection {
   background: #4cf09e; }
 
-/* line 554, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
+/* line 567, /Users/jennaschmittgens/Documents/Web Div Projects/agency-final/css/custom.scss */
 ::selection {
   background: #4cf09e !important; }
 

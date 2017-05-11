@@ -84,12 +84,15 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-image: url('/img/header-bg-custom/hard-drive-disk-edit.png');
     .intro-text {
+        padding-top: 166px;
+        padding-bottom: 190px;
         .intro-lead-in {
             @include Serif-font;
+            margin-bottom: 2em;
         }
         .intro-heading {
             @include Heading-font;
-            margin-bottom: 10px;
+            margin-bottom: 1em;
         }
     }
 }
@@ -132,6 +135,11 @@ header {
     .navbar-nav > .active > a:focus {
         background-color: darken($theme-custom-color, 35%) !important; // 10%
     }
+}
+
+.modal-backdrop.in {
+//    filter: alpha(opacity=50);
+    opacity: 0;
 }
 
 //#portfolio {
@@ -299,7 +307,7 @@ header {
         opacity: 0;
         display: none;
     }
-}
+} 
 
 
 // end of photography
@@ -515,6 +523,11 @@ section#contact {
         .timeline-image {
             background-color: $theme-custom-color;
             border: 7px solid $circle-color;
+            height: 170px;
+//            .image-circle {
+//                height: 170px;
+//                border-radius: 100%;
+//            }
         }
     }
 }
