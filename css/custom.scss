@@ -6,19 +6,32 @@
 // hsla(368,50%,50%,1)
 // hsla(365,50%,50%,1)
 
-$theme-custom-color: hsla(21,85%,62%,1);
+$theme-custom-color: hsla(150,85%,62%,1); // hsla(21,85%,62%,1)
 $placeholder-color: hsla(0,0%,50%,1);
-$portfolio-color: hsla(21,85%,62%,0.8);
+$portfolio-color: hsla(164,50%,23%,0.8);
+$circle-color: hsla(164,50%,23%,1);
+
+#services {
+    .container {
+        .text-center {
+            > .col-md-4 {
+                > p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
 
 a {
-    color: $theme-custom-color;
+    color: white;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken($theme-custom-color, 10%); // mess with this percentage; 10%
+    color: darken($theme-custom-color, 35%) !important; // mess with this percentage; 10%
 }
 
 .btn-primary {
@@ -26,9 +39,26 @@ a.active {
     @include Heading-font;
 }
 
+.bg-primary {
+  color: #fff;
+  background-color: $theme-custom-color;
+}
+
 .btn-xl {
     @include button-variant (white, $theme-custom-color, $theme-custom-color);
     @include Heading-font;
+}
+
+
+a:hover {
+    color: white !important;
+    .btn-xl {
+        color: white;
+        background-color: darken($theme-custom-color, 35%);
+        border-color: darken($theme-custom-color, 35%);
+        font-family: "Heading-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+    }
 }
 
 body {
@@ -37,6 +67,7 @@ body {
 }
 
 footer {
+    text-align: center;
     span.copyright {
         @include Heading-font;
         float: none;
@@ -51,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('/img/header-bg-custom/hard-drive-disk-edit.jpg');
+    background-image: url('/img/header-bg-custom/hard-drive-disk-edit.png');
     .intro-text {
         .intro-lead-in {
             @include Serif-font;
@@ -71,7 +102,7 @@ header {
         &:focus,
         &:active,
         &.active {
-            color: darken($theme-custom-color, 10%); // mess with this percentage; 10%
+            color: darken($theme-custom-color, 35%) !important; // mess with this percentage; 10%
         }
     }
     .navbar-toggle {
@@ -99,7 +130,7 @@ header {
     }
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
-        background-color: darken($theme-custom-color, 10%);
+        background-color: darken($theme-custom-color, 35%) !important; // 10%
     }
 }
 
@@ -217,7 +248,7 @@ header {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            @include serif-font;
+            @include Serif-font;
             font-style: italic;
             font-size: 16px;
         }
@@ -231,9 +262,9 @@ header {
     }
     .close-modal {
         position: absolute;
-        width:75px;
-        height:75px;
-        background-color:transparent;
+        width: 75px;
+        height: 75px;
+        background-color: transparent;
         top: 25px;
         right: 25px;
         cursor: pointer;
@@ -241,26 +272,26 @@ header {
             opacity: 0.3;
         }
         .lr {
-            height:75px;
-            width:1px;
-            margin-left:35px;
-            background-color:$gray-darker;
+            height: 75px;
+            width: 1px;
+            margin-left: 35px;
+            background-color: $gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
             -webkit-transform: rotate(45deg);
             /* Safari and Chrome */
-            z-index:1051;
+            z-index: 1051;
             .rl {
-                height:75px;
-                width:1px;
-                background-color:$gray-darker;
+                height: 75px;
+                width: 1px;
+                background-color: $gray-darker;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
-                z-index:1052;
+                z-index: 1052;
             }            
         }        
     }
@@ -372,7 +403,7 @@ header {
         } 
         p.item-intro { 
             margin: 20px 0 30px; 
-            @include serif-font; 
+            @include Serif-font; 
             font-style: italic; 
             font-size: 16px; 
         } 
@@ -386,9 +417,9 @@ header {
     } 
     .close-modal { 
         position: absolute; 
-        width:75px; 
-        height:75px; 
-        background-color:transparent; 
+        width: 75px; 
+        height: 75px; 
+        background-color: transparent; 
         top: 25px; 
         right: 25px; 
         cursor: pointer; 
@@ -396,26 +427,26 @@ header {
             opacity: 0.3; 
         } 
         .lr { 
-            height:75px; 
-            width:1px; 
-            margin-left:35px; 
-            background-color:$gray-darker; 
+            height: 75px; 
+            width: 1px; 
+            margin-left: 35px; 
+            background-color: $gray-darker; 
             transform: rotate(45deg); 
             -ms-transform: rotate(45deg); 
             /* IE 9 */ 
             -webkit-transform: rotate(45deg); 
             /* Safari and Chrome */ 
-             z-index:1051; 
+             z-index: 1051; 
             .rl { 
-                height:75px; 
-                width:1px; 
-                background-color:$gray-darker; 
+                height: 75px; 
+                width: 1px; 
+                background-color: $gray-darker; 
                 transform: rotate(90deg); 
                 -ms-transform: rotate(90deg); 
                 /* IE 9 */ 
                 -webkit-transform: rotate(90deg); 
                 /* Safari and Chrome */ 
-                z-index:1052; 
+                z-index: 1052; 
             }             
         }         
     } 
@@ -428,14 +459,25 @@ header {
  
 // end of multimedia 
 
+.timeline {
+    .timeline-heading {
+        h4 {
+            color: hsla(150,85%,42%,1);
+        }
+    }
+}
 
 section {
     h3.section-subheading {
         @include Serif-font;
+        margin-bottom: 50px;
     }
 }
 
 section#contact {
+    .text-muted {
+        color: hsla(0,0%,80%,1);
+    }
     .form-control:focus {
         border-color: $theme-custom-color;
     }
@@ -466,9 +508,13 @@ section#contact {
 }
 
 .timeline {
+    &:before {
+        background-color: $circle-color;
+    }
     > li {
         .timeline-image {
             background-color: $theme-custom-color;
+            border: 7px solid $circle-color;
         }
     }
 }
@@ -495,6 +541,9 @@ ul.social-buttoms {
                 @include Heading-font;
             }
         }
+    }
+    section {
+        padding: 30px 0;
     }
 }
 
